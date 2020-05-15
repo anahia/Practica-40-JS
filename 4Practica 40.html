@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 40-->
+
+<head>
+    <title>Practica 40</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        function suma(v1, v2) {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.pvalor = pvalor;
+            this.svalor = svalor;
+            this.retornarR = retornarR;
+        }
+
+        function pvalor(v1) {
+            this.v1 = v1;
+        }
+
+        function svalor(v2) {
+            this.v2 = v2;
+        }
+
+        function retornarR() {
+            return this.v1 + this.v2;
+        }
+        var sum;
+        sum = new suma();
+        sum.pvalor(48);
+        sum.svalor(80);
+        document.write('Esta es la suma de los dos valores:');
+        document.write('<br>');
+        document.write(sum.retornarR());
+    </script>
+</body>
+
+</html>
